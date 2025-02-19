@@ -4,6 +4,17 @@ body {
 }
 
 nav {
-    border-color: black;
-    border: solid;
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    top: 24px;
+}
+
+h1 {
+    background-color: lightskyblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
