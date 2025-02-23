@@ -3,24 +3,33 @@
 body {
     background-color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
-nav {
-    position: absolute;
-    right: 10px;
-    padding: 5px;
-    top: 35px;
-    font-size: large;
+header {
+    background-color: lightskyblue;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 0px 10px;
+
 }
 
+h2 {
+    padding: 0px 10px;
+}
+
+.text {
+    /* margin: 20px; */
+    padding: 0px 10px;
+}
+ 
 p {
+    padding: 0px 10px;
     text-align: justify;
 }
 
-h1 {
-    padding: 15px 5px 5px 5px;
-    background-color: lightskyblue;
-}
 
 img {
     max-width: 100%;
@@ -31,7 +40,7 @@ img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-section {
+.section {
     border: solid;
     border-top: none;
     border-left: none;
@@ -40,6 +49,14 @@ section {
     padding: 5px 0px 0px px;
 }
 
+@media (max-width: 480px) {
+    section {
+      flex-direction: row;
+      background-color: darkgrey;
+      color: white;
+    }
+    
+}
 /* Class Styles */
 
 .cv {
@@ -58,7 +75,33 @@ section {
 
 .navLink {
     text-decoration: none;
-    padding: 0px 3px 0px 3px;
+    padding: 1pc 0.5pc 1pc 0.5pc;
+}
+
+.portimg:hover {
+    transform: scale(2); /* doubles the size */
+    cursor: pointer;
+}
+
+.form {
+    background-color: aqua;
+    padding: 10px 0px 30px;
+}
+footer {
+    background-color: lightskyblue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0px 0px;
+}
+
+footer img {
+    margin: 5px;
+    width: 30px;
+    height: auto;
+    box-shadow: none;
 }
 
 /*  ID Styles */
@@ -67,3 +110,25 @@ section {
     border-width: 3px;
     padding: 5px 0px 0px px;
 }
+
+/* Form Styles */
+#form {
+    display: flex;
+    width: 0;
+    height: 200;
+    padding: 0pt 250pt 0pt 0pt;
+    margin: auto;
+    align-items: flex-start;
+    align-content: baseline;
+    flex-flow: column wrap;
+    
+}
+
+#name {
+    padding: 0px 370px 0px 0px;
+}
+
+#email {
+    padding: 0px 370px 0px 0px;
+}
+
