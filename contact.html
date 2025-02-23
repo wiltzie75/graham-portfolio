@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graham Portfolio Site</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="javascript.js"></script>
+    <title>Contact</title>
 </head>
 <body>
     <!-- Header -->
@@ -19,18 +19,20 @@
             <a href="contact.html" class="navLink">Contact</a>
         </nav>
     </header>
-    <!-- Short description of me -->
-    <p>
-        <h2>Software Engineer, Artist, City Dweller</h2> 
-    </p>
-    <!-- Headshot of Eric Graham -->
-    <img src="assets/Final-_MG_9930.jpg" alt="Headshot of Eric Graham">
-     <!-- Short description of me -->
-    <p>
-        This site is a portfolio site that showcases my qualifications and the projects I have worked on in the past.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, rerum. Praesentium qui, non quibusdam architecto nihil deserunt dolorum sunt sit quia ipsa ducimus voluptatem eligendi pariatur, magnam delectus libero temporibus?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis id nesciunt quos repellat ut voluptas reprehenderit deserunt. Voluptate, aut repellat velit blanditiis quaerat totam provident aperiam nesciunt architecto quia alias.</p>
+    <div class="form">
+        <form action="./success.html">
+            <p>To get on our mailing list, please fill out the form below:</p>
+            <div id="form">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label><br>
+                <input class="email" type="email" name="email" id="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" rows="6" cols="62"></textarea><br><br>
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
     <!-- Footer -->
     <footer>
         <a href="https://www.linkedin.com/in/ericgraham1/" target="_blank">

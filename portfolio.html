@@ -8,20 +8,24 @@
     <script src="script.js" ></script>
 </head>
 <body>
-    <h1>Eric Graham</h1>
-    <!-- Nav section with links to other pages -->
-    <nav>
-        <a href="index.html" class="navLink">Home</a>
-        <a href="about.html" class="navLink">About</a>
-        <a href="portfolio.html" class="navLink">Portfolio</a>
-    </nav>
-    <main>
-        <section>
+    <!-- Header -->
+    <header>
+        <h1>Eric Graham</h1>
+        <!-- Nav section with links to other pages -->
+        <nav>
+            <a href="index.html" class="navLink">Home</a>
+            <a href="about.html" class="navLink">About</a>
+            <a href="portfolio.html" class="navLink">Portfolio</a>
+            <a href="contact.html" class="navLink">Contact</a>
+        </nav>
+    </header>
+    <div>
+        <section class="section">
             <!-- Description of ELK Stack project for a cybersecurity course -->
             <h4>ELK Project</h4>
             <p>This was a solo project, where I configured a Azure Cloud network with 4 vms, 2 network security groups and a load balancer. Installed docker containers to deploy a fully functional ELK stack. Configured ELK to use filebeat and metricbeat.</p>
             <!-- Image of topography for the ELK Stack project -->
-            <img src="assets/elkstack.jpg" alt="ELK-Project">
+            <img class="portimg" src="assets/elkstack.jpg" alt="ELK-Project">
             <a href="https://github.com/wiltzie75/ELK-Project" class="projectLink" target="_blank">ELK Stack Github</a>
         </section>
         <section>
@@ -29,9 +33,18 @@
             <h4>Red Team / Blue Team Project</h4>
             <p>This is a Red Team / Blue Team project that was composed of three parts. The first part I acted as the Red Team and was tasked with gaining access to a web server. The second part I acted as the Blue Team to analyze the Red Team attack. I used Kibana and the metricbeat, filebeat and packetbeat packages to view the logs. The third part consisted of proposed alarms and mitigation strategies.</p>
             <!-- Image of topography for the Red Team / Blue Team project -->
-            <img src="assets/red:blue.jpg" alt="Network Topology">
+            <img class="portimg" src="assets/red:blue.jpg" alt="Network Topology">
             <a href="https://github.com/wiltzie75/Red-Team---Blue-Team-Proejct" class="projectLink" target="_blank">Red Team/Blue Team Github</a>
         </section>
-    </main>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <a href="https://www.linkedin.com/in/ericgraham1/" target="_blank">
+            <img class="footer" src="assets/linkedin-svgrepo-com.png" alt="Linkedin" />
+        </a>
+        <a href="https://bsky.app/profile/wiltzie75.bsky.social" target="_blank">
+            <img class="footer" src="assets/Bluesky_Logo.svg.png" alt="Bluesky" />
+        </a>
+    </footer>
 </body>
 </html>
